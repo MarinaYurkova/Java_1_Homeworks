@@ -46,4 +46,12 @@ class HomeWork1 {
 
         System.out.println ((a >= b)? "a >= b" : "a < b");
     }
+    
+    static void printSymbNTimes (String a, int b) {
+        for (int a = 0; a < 5; a++) {
+            for (String b = 0; b < 5; b++) {
+            }
+            System.out.println ();
+        }
+    }
 }

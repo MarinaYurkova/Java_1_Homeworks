@@ -2,7 +2,7 @@
 *
 * Java 1. Homework #2
 * @author Marina Yurkova
-* @version 13.12.21
+* @version 13.12.21, corrected 14.12.21
 */
 
 class HomeWork2 {
@@ -10,7 +10,7 @@ class HomeWork2 {
         System.out.println (checkSum10To20(3, 5));
         System.out.println (checkPlusOrMinus (5));
         System.out.println (checkNegative (-6));
-        printSymbNTimes ();
+        printStringNTimes ("Hallelujah!!", 5);
     }
 
     static boolean checkSum10To20(int a, int b) {
@@ -25,12 +25,9 @@ class HomeWork2 {
         return a < 0;
     }
     
-    static void printSymbNTimes () {
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5; j++) {
-                System.out.print ("^");
-            }
-            System.out.println ();
+    static void printStringNTimes (String a, int b) {
+        for (int i = 1; i < b; i++) {
+            System.out.println (a);
         }
     }
 }
