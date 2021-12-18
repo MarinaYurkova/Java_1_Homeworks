@@ -6,10 +6,10 @@
 */
 
 class HomeWork1 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         printThreeWords();
-        System.out.println (checkSumSign(1, -2));
-        printColor ();
+        System.out.println(checkSumSign(1, -2));
+        printColor();
         compareNumbers();
     }
 
@@ -20,38 +20,22 @@ class HomeWork1 {
     }
 
     static String checkSumSign(int a, int b) {
-
-        return a + b >= 0? "Positive" : "Negative";	
+        return a + b >= 0? "Positive" : "Negative";
     }
 
     static void printColor() {
         int value = 50;
-
         if (value <=0) {
-            System.out.println ("Red");
-        }
-
-        else if (value <=100) {
-            System.out.println ("Yellow");
-        }
-
-        else {
+            System.out.println("Red");
+        } else if (value <=100) {
+            System.out.println("Yellow");
+        } else {
             System.out.println ("Green");
         }
-
     }
 
     static void compareNumbers() {
         int a = 1, b = 2;
-
-        System.out.println ((a >= b)? "a >= b" : "a < b");
-    }
-    
-    static void printSymbNTimes (String a, int b) {
-        for (int a = 0; a < 5; a++) {
-            for (String b = 0; b < 5; b++) {
-            }
-            System.out.println ();
-        }
+        System.out.println((a >= b)? "a >= b" : "a < b");
     }
 }
