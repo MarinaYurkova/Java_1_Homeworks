@@ -101,26 +101,26 @@ class TicTacToe {
     boolean isWin(char ch) {
 
         for (int i = 0; i < table.length; i++) {
-        if ((table[i][0] == ch && table[i][1] == ch && table[i][2] == ch) || 
-        (table[0][i] == ch && table[1][i] == ch && table[2][i] == ch)) return true;
+            if ((table[i][0] == ch && table[i][1] == ch && table[i][2] == ch) || 
+            (table[0][i] == ch && table[1][i] == ch && table[2][i] == ch)) return true;
         }
-        if (table[0][0] == ch && table[1][1] == ch && table[2][2] == ch) return true;
-        if (table[2][0] == ch && table[1][1] == ch && table[0][2] == ch) return true;
-        return false;
+            if (table[0][0] == ch && table[1][1] == ch && table[2][2] == ch) return true;
+            if (table[2][0] == ch && table[1][1] == ch && table[0][2] == ch) return true;
+            return false;
     }
-        //Способ проверки из урока
-        //вертикаль
-        //if (table[0][0] == ch && table[0][1] == ch && table[0][2] == ch) return true;
-        //if (table[1][0] == ch && table[1][1] == ch && table[2][2] == ch) return true;
-        //if (table[2][0] == ch && table[2][1] == ch && table[2][2] == ch) return true;
-        //горизонталь
-        //if (table[0][0] == ch && table[1][0] == ch && table[2][0] == ch) return true;
-        //if (table[0][1] == ch && table[1][1] == ch && table[2][1] == ch) return true;
-        //if (table[0][2] == ch && table[1][2] == ch && table[2][2] == ch) return true;
-        //диагональ
-        //if (table[0][0] == ch && table[1][1] == ch && table[2][2] == ch) return true;
-        //if (table[2][0] == ch && table[1][1] == ch && table[0][2] == ch) return true;
-        //return false;
+          //Способ проверки из урока
+          //вертикаль
+          //if (table[0][0] == ch && table[0][1] == ch && table[0][2] == ch) return true;
+          //if (table[1][0] == ch && table[1][1] == ch && table[2][2] == ch) return true;
+          //if (table[2][0] == ch && table[2][1] == ch && table[2][2] == ch) return true;
+          //горизонталь
+          //if (table[0][0] == ch && table[1][0] == ch && table[2][0] == ch) return true;
+          //if (table[0][1] == ch && table[1][1] == ch && table[2][1] == ch) return true;
+          //if (table[0][2] == ch && table[1][2] == ch && table[2][2] == ch) return true;
+          //диагональ
+          //if (table[0][0] == ch && table[1][1] == ch && table[2][2] == ch) return true;
+          //if (table[2][0] == ch && table[1][1] == ch && table[0][2] == ch) return true;
+          //return false;
 
     boolean isTableFull() {
         for (int y = 0; y < table.length; y++) {
