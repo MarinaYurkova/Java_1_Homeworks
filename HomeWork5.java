@@ -2,7 +2,7 @@
 *
 * Java 1. Homework #5
 * @author Marina Yurkova
-* @version 23.12.21
+* @version 23.12.21, corrected 28.12.21
 */
 
 class HomeWork5 {
